@@ -1,0 +1,44 @@
+plugins {
+  id "com.github.opengl-BOBO.assertjGen" version "1.1.8"
+}
+
+// Apply the java-library plugin to add support for Java Library
+apply plugin: 'java-library'
+apply plugin: 'eclipse'
+
+sourceSets {
+  test {
+    java.srcDir 'src/test/java-gen'
+  }
+}
+ 
+ext {
+	// This property must be declared before to apply plugin ("apply plugin: 'com.github.opengl-BOBO.assertjGen'").
+	// Because assertjGen plugin needs read these options before define tasks.
+	assertjGenPreConfig = [
+		'assertjGenerator': 'org.assertj:assertj-assertions-generator:2.1.0',
+		'sourceSets': ['main']
+	]
+}
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    // Use jcenter for resolving your dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    mavenCentral()
+}
+
+assertjGen {
+	// specify target class or package names by array. (defailt is empty array)
+	classOrPackageNames = ['com.darwinit']
+	
+	// specify output dir(String path or File object). (default is 'src/test/java-gen')
+	outputDir = 'src/test/java-gen'
+}
+
+
+dependencies {
+    // Use JUnit test framework
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.assertj:assertj-core:3.8.0'
+}

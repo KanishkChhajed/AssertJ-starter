@@ -1,14 +1,44 @@
-#links
-
-AssertJ
-http://joel-costigliola.github.io/assertj/index.html
-API
-http://joel-costigliola.github.io/assertj/core-8/api/index.html
-
-plugin gradle: 
-https://github.com/opengl-8080/assertjGen-gradle-plugin
-
-#TDD help (found on google, lost reference)
-
-erreurs courantes & comment s'améliorer ? 
-http://referentiel.institut-agile.fr/tdd.html
+<h1 align="center">
+    <img src="https://img.shields.io/badge/AssertJ-starter-🎯-blueviolet?style=for-the-badge" alt="Repo Badge">
+  </h1>
+  
+  <p align="center">
+    <img src="https://avatars.githubusercontent.com/u/121193249?v=4" width="100" style="border-radius:50%;">
+  </p>
+  
+  ---
+  
+  ## 📖 About the Project
+  - **Repository Name:** AssertJ-starter
+  - **Owner:** KanishkChhajed
+  - **Visibility:** public
+  - **Primary Language(s):** Java
+  
+  ---
+  
+  ## 📊 Stats
+  
+  | Stars | Forks | Watchers | Open Issues | Closed Issues |
+  |:----:|:-----:|:--------:|:-----------:|:-------------:|
+  | 0 | 0 | 0 | 0 | 0 |
+  
+  ---
+  
+  ## 📢 Last Commit
+  
+  > "Adding my workflow for testing"
+  
+  ---
+  
+  ## 🤝 Contributors
+  
+  
+  - [`cHullaert`](#)
+  
+  - [`KanishkChhajed`](#)
+  
+  
+  ---
+  
+  > *Generated with ❤️ by an automated GitHub Action* 🚀
+  
